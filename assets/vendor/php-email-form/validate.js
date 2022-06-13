@@ -73,7 +73,7 @@
       }
     })
     .catch((error) => {
-    thisForm.querySelector('.sent-message').innerHTML = "Thanks for submitting your contact details!";
+    thisForm.querySelector('.sent-message').innerHTML = "Thanks for contacting us! We'll get back to you as soon as possible.";
     thisForm.querySelector('.sent-message').classList.add('d-block');
       //displayError(thisForm, error);
     });
