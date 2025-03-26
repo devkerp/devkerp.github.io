@@ -7,6 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
       .then(response => response.text())
       .then(html => {
         headerContainer.innerHTML = html;
+        
+        // Initialize mobile navigation after header is loaded
+        initializeMobileNav();
       })
       .catch(error => {
         console.error('Error loading header:', error);
@@ -25,4 +28,18 @@ document.addEventListener('DOMContentLoaded', function() {
         console.error('Error loading footer:', error);
       });
   }
-}); 
+});
+
+// Function to initialize mobile navigation
+function initializeMobileNav() {
+  const mobileNavToggle = document.querySelector('.mobile-nav-toggle');
+  const navbar = document.getElementById('navbar');
+  
+  if (mobileNavToggle && navbar) {
+    mobileNavToggle.addEventListener('click', function() {
+      navbar.classList.toggle('navbar-mobile');
+      this.classList.toggle('bi-list');
+      this.classList.toggle('bi-x');
+    });
+  }
+} 
