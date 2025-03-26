@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>StagerLabs LLC - VRAgentZero</title>
+  <meta content="Contact StagerLabs about VRAgentZero - our Agentic Vulnerability Research Assistant for Windows binaries" name="description">
+  <meta content="AI, security, vulnerability research, windows security, vulnerability scanner, binary analysis" name="keywords">
+
+  <!-- Favicons -->
+  <link href="/assets/img/favicon.png" rel="icon">
+  <link href="/assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="/assets/css/style.css" rel="stylesheet">
+  
+  <!-- Custom Styles -->
+  <style>
+    #about {
+      margin-bottom: 0;
+      padding-bottom: 20px;
+    }
+    #main {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+    .product-highlight {
+      background-color: #f8f9fa;
+      border-radius: 5px;
+      padding: 25px;
+      margin-bottom: 30px;
+    }
+    .product-highlight h4 {
+      color: #18d26e;
+      margin-bottom: 15px;
+      font-weight: 600;
+    }
+    .feature-list {
+      margin-top: 15px;
+    }
+    .feature-list li {
+      margin-bottom: 8px;
+    }
+    .contact-info-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 100%;
+      padding: 30px 20px;
+      background-color: #f9f9f9;
+      border-radius: 8px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+    }
+    .contact-info-item {
+      margin-bottom: 25px;
+      text-align: left;
+    }
+    .contact-info-item:last-child {
+      margin-bottom: 0;
+    }
+    .contact-info-title {
+      font-size: 1.1rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      color: #333;
+      letter-spacing: 1px;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+    }
+    .contact-info-title i {
+      color: #18d26e;
+      margin-right: 10px;
+      font-size: 1.3rem;
+    }
+    .contact-info-content {
+      font-size: 1rem;
+      color: #555;
+      margin-left: 33px;
+    }
+    .contact-info-content a {
+      color: #18d26e;
+      text-decoration: none;
+      transition: all 0.3s ease;
+    }
+    .contact-info-content a:hover {
+      color: #15b25c;
+      text-decoration: underline;
+    }
+    .product-access-btn {
+      display: inline-block;
+      background-color: #18d26e;
+      color: white;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-weight: 500;
+      margin-top: 5px;
+      transition: all 0.3s ease;
+    }
+    .product-access-btn:hover {
+      background-color: #15b25c;
+      transform: translateY(-2px);
+      color: white;
+      text-decoration: none;
+    }
+    @media (max-width: 991px) {
+      .contact-info-section {
+        margin-bottom: 30px;
+      }
+    }
+  </style>
+  
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-P2Z96GZ2QM"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-P2Z96GZ2QM');
+	</script>
+</head>
+
+<body>
+
+  <!-- Header Container -->
+  <div id="header-container" data-header-type="header-solid"></div>
+
+   <main id="main">
+    <br><br>
+
+    <!-- ======= Product Section ======= -->
+    <section id="product">
+      <div class="container" data-aos="fade-up">
+
+        <header class="section-header text-center mb-5">
+          <h3 class="fw-bold">VRAGENTZERO</h3>
+          <p class="lead">Advanced Agentic Vulnerability Research Platform for Windows Binaries</p>
+        </header>
+
+        <div class="row gx-5 mb-5">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <div class="content-box p-4">
+              <p class="intro-text">
+                VRAgentZero is a cutting-edge AI-powered vulnerability research platform designed specifically for discovering logical and memory corruption vulnerabilities in closed-source Microsoft Windows components. Leveraging multi-agent orchestration and deep binary analysis techniques, it systematically identifies high-risk security issues across complex Windows attack surfaces.
+              </p>
+              
+              <h4 class="feature-heading"><span class="feature-icon"><i class="bi bi-check2-circle"></i></span> Core Capabilities</h4>
+              <ul class="feature-list">
+                <li><strong>Multi-IPC Attack Surface Analysis:</strong> Comprehensive coverage of Windows IPC mechanisms (COM, MSRPC, WinRT, ALPC, Named Pipes) with automated discovery and prioritization of high-risk entry points</li>
+                <li><strong>Deep Callgraph Traversal:</strong> Dynamic analysis of complete execution paths with intelligent correlation of decompiled code and assembly</li>
+                <li><strong>AI-Powered Vulnerability Detection:</strong> Specialized agents working in concert to identify memory corruption, logical flaws, tainted data flows, and known vulnerability patterns</li>
+                <li><strong>High-Precision Reporting:</strong> Detailed vulnerability classification with severity assessment and root cause analysis</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="content-box p-4">
+              <h4 class="feature-heading mb-4"><span class="feature-icon"><i class="bi bi-trophy"></i></span> Competitive Advantages</h4>
+              <div class="advantage-cards">
+                <div class="advantage-card mb-3">
+                  <div class="advantage-icon">
+                    <i class="bi bi-file-earmark-binary"></i>
+                  </div>
+                  <div class="advantage-content">
+                    <h5>Binary-Only Analysis</h5>
+                  <p>Operates without source code access, making it ideal for closed-source Windows components</p>
+                </div>
+              </div>
+                <div class="advantage-card mb-3">
+                  <div class="advantage-icon">
+                    <i class="bi bi-diagram-3"></i>
+                  </div>
+                  <div class="advantage-content">
+                    <h5>IPC-Focused Methodology</h5>
+                  <p>Targets the most security-critical Windows interfaces where attack surface is exposed</p>
+                </div>
+              </div>
+                <div class="advantage-card mb-3">
+                  <div class="advantage-icon">
+                    <i class="bi bi-cpu"></i>
+                  </div>
+                  <div class="advantage-content">
+                    <h5>AI-Powered Callgraph Analysis</h5>
+                  <p>Applies specialized prompts and agents to systematically analyze complex execution paths</p>
+                </div>
+              </div>
+                <div class="advantage-card mb-3">
+                  <div class="advantage-icon">
+                    <i class="bi bi-shield-check"></i>
+                  </div>
+                  <div class="advantage-content">
+                    <h5>High-Precision Results</h5>
+                  <p>Reduces false positives through multi-agent consensus and deep contextual understanding</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="architecture-section mb-5 p-4">
+          <h4 class="section-title text-center mb-4"><span class="feature-icon"><i class="bi bi-gear"></i></span> Technical Architecture</h4>
+          <p class="text-center mb-4">VRAgentZero employs an orchestrator-workers architecture with specialized agents focused on different vulnerability classes:</p>
+          
+          <div class="row g-4">
+              <div class="col-md-6 col-lg-3">
+              <div class="arch-card h-100">
+                <div class="arch-card-header">
+                  <h5>Context Builder Engine</h5>
+                </div>
+                <ul class="arch-list">
+                      <li>Processes input callgraphs and establishes attack surface understanding</li>
+                      <li>Integrates pre-identified sensitive paths for risk prioritization</li>
+                      <li>Queries vector database for API context and documentation</li>
+                      <li>Caches comprehensive context for downstream analysis agents</li>
+                    </ul>
+                  </div>
+                </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="arch-card h-100">
+                <div class="arch-card-header">
+                  <h5>Orchestration Layer</h5>
+              </div>
+                <ul class="arch-list">
+                      <li>Dynamically plans analysis workflows based on component structure</li>
+                      <li>Prioritizes investigation of high-risk execution paths</li>
+                      <li>Coordinates specialized agent activities with central state management</li>
+                      <li>Optimizes resource allocation for parallel vulnerability discovery</li>
+                    </ul>
+                  </div>
+                </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="arch-card h-100">
+                <div class="arch-card-header">
+                  <h5>Analysis Agents</h5>
+              </div>
+                <ul class="arch-list">
+                      <li>Memory Corruption Agent: Identifies use-after-free and out-of-bounds operations</li>
+                      <li>Logical Bug Agent: Detects race conditions, TOCTOU issues, and privilege escalation</li>
+                      <li>Data Flow Agent: Performs taint analysis from entry points</li>
+                      <li>Pattern Recognition Agent: Matches known vulnerability patterns</li>
+                    </ul>
+                  </div>
+                </div>
+            <div class="col-md-6 col-lg-3">
+              <div class="arch-card h-100">
+                <div class="arch-card-header">
+                  <h5>Vulnerability Synthesizer</h5>
+              </div>
+                <ul class="arch-list">
+                      <li>Consolidates findings across agent analyses with deduplication</li>
+                      <li>Prioritizes vulnerabilities by severity and exploitability</li>
+                      <li>Generates comprehensive technical reports with remediation guidance</li>
+                    </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="cta-section text-center p-5">
+          <h4 class="mb-3">Ready to transform your vulnerability research capabilities?</h4>
+          <p class="mb-4">VRAgentZero represents the next generation of binary security analysis, bringing advanced AI capabilities to Windows vulnerability research.</p>
+          <a href="/contact-us/" class="btn btn-cta px-4 py-2">Contact Us for Early Access</a>
+        </div>
+
+      
+      <style>
+        #product {
+          padding: 80px 0;
+          background-color: #fafafa;
+        }
+        
+        .section-header h3 {
+          font-size: 2.2rem;
+          letter-spacing: 2px;
+        }
+        
+        .accent-line {
+          height: 3px;
+          width: 60px;
+          background: #18d26e;
+        }
+        
+        .section-header .lead {
+          font-size: 1.3rem;
+          color: #444;
+        }
+        
+        .content-box {
+          background-color: white;
+          border-radius: 8px;
+          box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+          height: 100%;
+        }
+        
+        .intro-text {
+          font-size: 1.05rem;
+          line-height: 1.7;
+          color: #444;
+          margin-bottom: 24px;
+        }
+        
+        .feature-heading {
+          font-size: 1.4rem;
+          font-weight: 600;
+          color: #333;
+          margin-bottom: 20px;
+          display: flex;
+          align-items: center;
+        }
+        
+        .feature-icon {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
+          margin-right: 12px;
+          color: #18d26e;
+        }
+        
+        .feature-list {
+          padding-left: 1.4rem;
+        }
+        
+        .feature-list li {
+          margin-bottom: 16px;
+          line-height: 1.5;
+        }
+        
+        .advantage-card {
+          display: flex;
+          background-color: #f9f9f9;
+          border-radius: 8px;
+          border-left: 3px solid #18d26e;
+          overflow: hidden;
+          transition: transform 0.2s ease;
+        }
+        
+        .advantage-card:hover {
+          transform: translateY(-3px);
+        }
+        
+        .advantage-icon {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 16px;
+          font-size: 1.8rem;
+          color: #18d26e;
+          min-width: 60px;
+        }
+        
+        .advantage-content {
+          padding: 16px 16px 16px 0;
+        }
+        
+        .advantage-content h5 {
+          font-size: 1.1rem;
+          font-weight: 600;
+          margin-bottom: 8px;
+        }
+        
+        .advantage-content p {
+          margin-bottom: 0;
+          font-size: 0.95rem;
+          color: #555;
+        }
+        
+        .architecture-section {
+          background-color: white;
+          border-radius: 8px;
+          box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+        }
+        
+        .section-title {
+          font-size: 1.6rem;
+          font-weight: 600;
+          color: #333;
+        }
+        
+        .arch-card {
+          background-color: #f9f9f9;
+          border-radius: 8px;
+          box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+          transition: transform 0.2s ease;
+        }
+        
+        .arch-card:hover {
+          transform: translateY(-5px);
+        }
+        
+        .arch-card-header {
+          background-color: #18d26e;
+          color: white;
+          padding: 16px;
+          border-radius: 8px 8px 0 0;
+        }
+        
+        .arch-card-header i {
+          font-size: 1.8rem;
+          margin-bottom: 10px;
+        }
+        
+        .arch-card-header h5 {
+          font-size: 1.2rem;
+          font-weight: 600;
+          margin-bottom: 0;
+        }
+        
+        .arch-list {
+          list-style: none;
+          padding: 16px;
+          margin-bottom: 0;
+        }
+        
+        .arch-list li {
+          position: relative;
+          padding-left: 20px;
+          margin-bottom: 10px;
+          font-size: 0.95rem;
+          color: #444;
+        }
+        
+        .arch-list li:before {
+          content: "→";
+          position: absolute;
+          left: 0;
+          color: #18d26e;
+        }
+        
+        .cta-section {
+          background-color: #f2f2f2;
+          border-radius: 8px;
+          border-top: 3px solid #18d26e;
+        }
+        
+        .btn-cta {
+          background-color: #18d26e;
+          color: white;
+          font-weight: 600;
+          border-radius: 50px;
+          border: none;
+          transition: all 0.3s ease;
+          box-shadow: 0 4px 15px rgba(24, 210, 110, 0.3);
+        }
+        
+        .btn-cta:hover {
+          background-color: #15b25c;
+          transform: translateY(-2px);
+          box-shadow: 0 6px 20px rgba(24, 210, 110, 0.4);
+          color: white;
+        }
+        
+        @media (max-width: 992px) {
+          .content-box {
+            margin-bottom: 25px;
+          }
+        }
+      </style>
+    </section><!-- End Product Section -->
+
+  </main><!-- End #main -->
+  
+  <!-- Footer Container -->
+  <div id="footer-container"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="/assets/vendor/purecounter/purecounter.js"></script>
+  <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="/assets/js/main.js"></script>
+  
+  <!-- Components JS File -->
+  <script src="/assets/js/components.js"></script>
+
+</body>
+
+</html>
