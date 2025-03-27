@@ -25,7 +25,13 @@ document.addEventListener('DOMContentLoaded', function() {
   // Load footer component
   const footerContainer = document.getElementById('footer-container');
   if (footerContainer) {
-    fetch('/components/footer.html')
+    fetch(`/components/footer.html?v=${new Date().getTime()}`, {
+      headers: {
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        'Pragma': 'no-cache',
+        'Expires': '0'
+      }
+    })
       .then(response => response.text())
       .then(html => {
         footerContainer.innerHTML = html;
