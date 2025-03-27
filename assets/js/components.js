@@ -3,7 +3,13 @@ document.addEventListener('DOMContentLoaded', function() {
   const headerContainer = document.getElementById('header-container');
   if (headerContainer) {
     const headerType = headerContainer.dataset.headerType || 'header';
-    fetch(`/components/${headerType}.html`)
+    fetch(`/components/${headerType}.html?v=${new Date().getTime()}`, {
+      headers: {
+        'Cache-Control': 'no-cache, no-store, must-revalidate',
+        'Pragma': 'no-cache',
+        'Expires': '0'
+      }
+    })
       .then(response => response.text())
       .then(html => {
         headerContainer.innerHTML = html;
